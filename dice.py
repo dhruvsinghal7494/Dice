@@ -1,3 +1,5 @@
+import random
+
 def roll_dice(n):
     results = {}
     for i in range(n):
@@ -12,12 +14,7 @@ def roll_dice(n):
     return results
 
 
-# if __name__ == "__main__":
-#     n = int(input("Enter the number of times to roll the dice: "))
-#     a = roll_dice(n)
-#     for i in range(2, 12):
-#         #print(f"Sum {i}: {results.get(i, 0)}")
-# print(a)
-
+ 
 n = int(input("Enter the number of times to roll the dice: "))
-print(roll_dice(n))
+results = roll_dice(n)
+print(results)
